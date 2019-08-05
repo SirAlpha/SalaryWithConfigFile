@@ -5,6 +5,7 @@ __author__ = 'Nick Terskikh'
 import configparser
 import os
 
+# Тест
 # Проверка наличия файла со значениями values.ini в текущем каталоге
 if not os.path.exists("values.ini"):
     print('Файл переменных values.ini в текущем каталоге не найден! Программа завершена.')
