@@ -2,6 +2,8 @@
 
 Файл конфигурации values.ini должен быть в каталоге с программой.
 
+Сайт, посвящённый программированию и разработке [doc-me.ru](http://doc-me.ru/)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
