@@ -67,3 +67,5 @@ print('\nВаша конечная зарплата с процентной ст
 print(salary * stavka, 'руб.')
 print('\n***Конец***')
 input('\nДля завершения работы программы нажмите Enter...')
+print('TEST')
+print('TEST')
