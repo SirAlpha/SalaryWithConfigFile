@@ -26,10 +26,10 @@ if not os.path.exists("values.ini"):
     print('free = 200')
     print('stavka = 1.03')
     print('shtraf = 200')
-    input('\nДля завершения нажмите Enter...')
+    input('\nДля завершения работы программы нажмите Enter...')
     raise SystemExit(1)  # завершаем работу программы
 
-# Чтение значений переменных из файла values.ini, который должен быть расположен в этом же каталоге и присваивание им переменных
+# Чтение значений переменных из файла values.ini, который должен быть расположен в этом же каталоге и присваивание им
 config = configparser.ConfigParser()
 config.read("values.ini")
 grafik = float(config.get("value", "grafik"))
@@ -60,9 +60,10 @@ podmena_all = podmena_number * podmena
 
 # Подсчет и вывод зарплаты
 salary = (grafik_free_all + cp_number_all + grafik_all + support_all + podmena_all + other) - shtraf
+print('\n(', grafik_free_all, '+', cp_number_all, '+', grafik_all, '+', support_all, '+', podmena_all, '+', other, ')', '-', shtraf, '=', salary)
 print('\nВаша зарплата: ')
 print(salary, 'руб.')
 print('\nВаша конечная зарплата с процентной ставкой составит: ')
 print(salary * stavka, 'руб.')
 print('\n***Конец***')
-input()
+input('\nДля завершения работы программы нажмите Enter...')
